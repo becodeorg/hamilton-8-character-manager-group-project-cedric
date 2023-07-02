@@ -1,40 +1,17 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 4 | @import "/css/layout/mixins.scss";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   style.scss 4:9  root stylesheet */
 
-.search-container {
-  position: relative;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"/css/layout/mixins.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   style.scss 4:9  root stylesheet";
 }
-
-.search-container input[type=text] {
-  width: 200px;
-  padding: 5px;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: #d63384;
-  color: #6f42c1;
-}
-
-.search-container button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-@media (max-width: 560px) {
-  .search-container input[type=text] {
-    display: none;
-  }
-  .search-container button {
-    padding: 5px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
