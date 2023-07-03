@@ -1,15 +1,8 @@
+@import "/css/_bluebutton.scss";
 
-
-
+@import "/css/layout/font.scss";
+@import "/css/layout/header.scss";
+@import "/css/layout/homepage.scss";
 @import "/css/layout/mixins.scss";
-
-@import "/layout/resets.scss";
-
-@import "/layout/font.scss";
-
-@import "/layout/header.scss";
-
-@import "/layout/bluebutton.scss";
-
-@import "/layout/homepage.scss";
-
+@import "/css/layout/resets.scss";
+@import "/css/layout/variables.scss";
